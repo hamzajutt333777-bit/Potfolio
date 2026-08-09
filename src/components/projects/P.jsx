@@ -88,6 +88,9 @@ const P = (props) => {
 });
 
 useEffect(() => {
+
+  document.body.style.overflowX = 'hidden';
+
     const lenis = new Lenis({
       duration: 1.5,
       easing: (t) => 1 - Math.pow(1 - t, 3),
@@ -121,6 +124,7 @@ useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
 
     return () => {
+      
       lenis.destroy();
       gsap.ticker.remove(lenis.raf);
       window.removeEventListener('keydown', handleKeyDown);

@@ -22,6 +22,10 @@ const A = (props) => {
 ];
 
   useEffect(() => {
+
+    document.body.style.overflowX = 'hidden';
+    document.body.classList.add('hide-scrollbar');
+
     const lenis = new Lenis({
       duration: 1.5,
       easing: (t) => 1 - Math.pow(1 - t, 3),
@@ -55,6 +59,8 @@ const A = (props) => {
     window.addEventListener('keydown', handleKeyDown);
 
     return () => {
+      document.body.style.overflowX = '';
+    document.body.classList.remove('hide-scrollbar');
       lenis.destroy();
       gsap.ticker.remove(lenis.raf);
       window.removeEventListener('keydown', handleKeyDown);
@@ -83,7 +89,7 @@ const A = (props) => {
 
 
   return (
-    <div className='agentsdiv bg-blue- text-black transition-all pt-[0.1vw] bg-blue-'>
+    <div className='agentsdiv bg-blue- text-black transition-all pt-[0.1vw] overflow-x-hidden'>
       {/* <div className='absolute top-0 left-0 h-[20vw] w-full z-[50] bg-red-'>
         <DiffNav setSelectedPage={props.setSelectedPage} stairsTrigger={props.stairsTrigger} setStairsTrigger={props.setStairsTrigger} setNavValue={props.setNavValue} scrollVar={props.scrollVar} setScrollVar={props.setScrollVar}/>
       </div> */}

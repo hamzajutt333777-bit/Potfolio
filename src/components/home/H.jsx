@@ -12,7 +12,7 @@ const H = (props) => {
     <div className='relative w-full h-screen bg-black flex flex-col leading-25 overflow-hidden text-white'>
         
         <div className='videodiv fixed h-screen w-full'>
-            <img className='h-full w-full object-cover translate-x-[-30vw]' src="../../../public/instaPotfolioPic.jpg" alt="" />
+            <img className='h-full w-full object-cover translate-x-[-30vw]' src="/instaPotfolioPic.jpg" alt="" />
         </div>
         <div className='homediv relative h-full w-full pt-[5vw] font-medium '>
             <div className='uppercase w-full h-[25vw] text-left bg-red- translate-x-[29vw] -tracking-[0.6vw] translate-y-[2vw]'>
