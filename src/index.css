@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: auto !important;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.opacityClass {
+  opacity: 0;
+  transition: all ease 5s;
+}
+
+.word-spacing {
+  word-spacing: -0.8vw;
+}
