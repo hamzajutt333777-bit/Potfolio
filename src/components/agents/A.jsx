@@ -167,8 +167,8 @@ const A = (props) => {
       />
       
       <FullScreenNav setSelectedPage={props.setSelectedPage} stairsTrigger={props.stairsTrigger} setStairsTrigger={props.setStairsTrigger} setNavValue={props.setNavValue} scrollVar={props.scrollVar} setScrollVar={props.setScrollVar} />
-      <div className='absolute top-[497vw] left-0 h-screen overflow-hidden w-full bg-red-'>
-          <div className='h-[42.85vw] w-screen bg-white flex flex-col items-center justify-center leading-[11vw]'>
+      <div className='absolute top-[497vw] left-0 h-screen overflow-hidden w-full bg-'>
+          <div className='h-[42.85vw] w-screen bg-transparent flex flex-col items-center justify-center leading-[11vw]'>
             <h1 className='text-[15vw] translate-x-[-5vw] tracking-[-1.5vw] uppercase font-extrabold italic'>ready to</h1>
             <h1 className='text-[15vw] translate-x-[5vw] tracking-[-1.5vw] uppercase font-extrabold italic'>Advance</h1>
           </div>
