@@ -51,7 +51,7 @@ const P = (props) => {
     image1: '/codingimg3.webp',
     w11:'Job-Portal Web App',
     w12:'Frontend & Backend',
-    url1:'',
+    url1:'https://github.com/hamzajutt333777-bit/Job_Portal_Project',
     image2: '/codingimg4.webp',
     w21:'Animated Website',
     w22:'Frontend',
